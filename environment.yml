@@ -1,0 +1,16 @@
+name: bttca
+channels:
+  - conda-forge
+  - pytorch
+
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - pandas
+  - pytorch=2.0
+  - persim
+  - ripser
+
