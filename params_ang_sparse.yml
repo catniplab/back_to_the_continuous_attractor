@@ -1,0 +1,37 @@
+---
+exp_name: 'high_final'
+network_type: 'rnn'
+initialization_type: 'gain'
+nonlinearity: 'tanh'
+readout_nonlinearity: 'id'
+N_in: 1
+N_rec: 200
+N_out: 2
+N_blas: None
+rnn_init_gain: 1.5
+ml_rnn: True
+noise_std: 0
+dt_rnn: .1
+optimizer: 'adam'
+loss_function: 'mse_loss_masked'
+cuda: True
+scheduler: 'steplr'
+scheduler_step_size: 200
+scheduler_gamma: 0.85
+learning_rate: 0.001
+batch_size: 128
+n_epochs: 1000
+record_step: 
+clip_gradient: 
+final_loss: True
+last_mses: 10
+task: 'angularintegration'
+T: 10
+dt_task: .1
+task_sparsity: 'variable'
+verbose: False
+adam_momentum: .0
+weight_decay: .0
+adam_betas: 
+  - .9
+  - .999
